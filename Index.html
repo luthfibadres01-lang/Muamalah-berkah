@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="id" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muamalah Berkah - Marketplace Syariah Modern</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cairo:wght@300;400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-spinner">
+            <div class="spinner-ring"></div>
+            <div class="spinner-ring"></div>
+            <div class="spinner-ring"></div>
+        </div>
+        <p class="loading-text">Muamalah Berkah</p>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-seedling"></i>
+                <span>Muamalah</span>
+                <span class="logo-berkah">Berkah</span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#products" class="nav-link">Produk</a></li>
+                <li><a href="#categories" class="nav-link">Kategori</a></li>
+                <li><a href="#about" class="nav-link">Tentang</a></li>
+                <li><a href="#contact" class="nav-link">Kontak</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="search-input" placeholder="Cari produk halal...">
+                </div>
+                <div class="nav-icons">
+                    <i class="fas fa-heart wishlist-btn" data-count="0"></i>
+                    <i class="fas fa-shopping-cart cart-btn" data-count="3"></i>
+                    <i class="fas fa-moon theme-toggle" title="Dark Mode"></i>
+                </div>
+                <button class="login-btn">Masuk</button>
+            </div>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="floating-blob blob-1"></div>
+            <div class="floating-blob blob-2"></div>
+            <div class="floating-blob blob-3"></div>
+            <div class="islamic-pattern"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-check-circle"></i>
+                <span>100% Halal & Berkah</span>
+            </div>
+            
+            <h1 class="hero-title">
+                Marketplace <span class="gradient-text">Muamalah</span><br>
+                <span class="logo-berkah">Halal & Berkah</span>
+            </h1>
+            
+            <p class="hero-subtitle">
+                Jual beli syariah modern tanpa riba. Temukan produk halal, jasa berkah, 
+                dan kebutuhan muslim terbaik di satu platform.
+            </p>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="15000">0</div>
+                    <span>Produk Halal</span>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50000">0</div>
+                    <span>Transaksi Aman</span>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="2500">0</div>
+                    <span>Seller Terpercaya</span>
+                </div>
+            </div>
+
+            <div class="hero-buttons">
+                <button class="cta-primary">
+                    <i class="fas fa-shopping-cart"></i>
+                    Belanja Sekarang
+                </button>
+                <button class="cta-secondary">
+                    <i class="fas fa-store"></i>
+                    Mulai Jualan
+                </button>
+            </div>
+
+            <div class="hero-scroll">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Kategori Populer</h2>
+                <p class="section-subtitle">Pilih kategori produk halal berkualitas</p>
+            </div>
+
+            <div class="categories-grid">
+                <div class="category-card" data-category="fashion">
+                    <div class="category-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Fashion Muslim</h3>
+                    <p>Gamis, hijab, dan pakaian muslim premium</p>
+                </div>
+                <div class="category-card" data-category="food">
+                    <div class="category-icon">
+                        <i class="fas fa-drumstick-bite"></i>
+                    </div>
+                    <h3>Makanan Halal</h3>
+                    <p>Makanan dan minuman bersertifikat halal</p>
+                </div>
+                <div class="category-card" data-category="digital">
+                    <div class="category-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Produk Digital</h3>
+                    <p>Kursus, template, dan software islami</p>
+                </div>
+                <div class="category-card" data-category="herbal">
+                    <div class="category-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Herbal Sunnah</h3>
+                    <p>Obat herbal sesuai sunnah Rasulullah</p>
+                </div>
+                <div class="category-card" data-category="book">
+                    <div class="category-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Buku Islami</h3>
+                    <p>Buku-buku keislaman berkualitas</p>
+                </div>
+                <div class="category-card" data-category="service">
+                    <div class="category-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Jasa Freelance</h3>
+                    <p>Jasa profesional syariah compliant</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Produk Terlaris</h2>
+                <p class="section-subtitle">Produk halal terbaik dengan rating tinggi</p>
+            </div>
+
+            <div class="products-header">
+                <div class="products-filter">
+                    <button class="filter-btn active" data-filter="all">Semua</button>
+                    <button class="filter-btn" data-filter="fashion">Fashion</button>
+                    <button class="filter-btn" data-filter="food">Makanan</button>
+                    <button class="filter-btn" data-filter="digital">Digital</button>
+                </div>
+                <div class="products-sort">
+                    <select class="sort-select">
+                        <option>Urutkan: Terpopuler</option>
+                        <option>Terbaru</option>
+                        <option>Harga Terendah</option>
+                        <option>Harga Tertinggi</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="products-grid" id="productsGrid">
+                <!-- Product cards will be loaded here by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Apa Kata Mereka</h2>
+                <p class="section-subtitle">Testimoni dari pengguna Muamalah Berkah</p>
+            </div>
+
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Alhamdulillah, platform terbaik untuk jual beli halal. Transaksi aman tanpa riba."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=50&h=50&fit=crop&crop=face" alt="Ustadz Ahmad">
+                        <div>
+                            <h4>Ustadz Ahmad</h4>
+                            <span>Seller Gamis Premium</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- More testimonials -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Seller Dashboard Preview -->
+    <section class="dashboard-preview">
+        <div class="container">
+            <div class="dashboard-grid">
+                <div class="dashboard-info">
+                    <h2>Dashboard Seller Premium</h2>
+                    <p>Kelola toko Anda dengan mudah dan profesional</p>
+                    <ul>
+                        <li><i class="fas fa-chart-line"></i> Statistik penjualan real-time</li>
+                        <li><i class="fas fa-upload"></i> Upload produk mudah</li>
+                        <li><i class="fas fa-wallet"></i> Wallet syariah tanpa riba</li>
+                        <li><i class="fas fa-comments"></i> Chat buyer & seller</li>
+                    </ul>
+                    <button class="cta-primary">Jadi Seller Sekarang</button>
+                </div>
+                <div class="dashboard-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-shopping-cart"></i></div>
+                        <div class="stat-value">$12.450</div>
+                        <div class="stat-label">Penjualan Bulan Ini</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-users"></i></div>
+                        <div class="stat-value">1.247</div>
+                        <div class="stat-label">Pelanggan Baru</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-box"></i></div>
+                        <div class="stat-value">324</div>
+                        <div class="stat-label">Pesanan Aktif</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Pertanyaan Umum</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Apakah semua produk dijamin halal?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Ya, semua produk telah diverifikasi oleh tim syariah kami dan bersertifikat halal.
+                    </div>
+                </div>
+                <!-- More FAQ items -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Dapatkan Update Terbaru</h2>
+                    <p>Promo halal, produk baru, dan tips berbisnis syariah</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Masukkan email Anda">
+                    <button type="submit">Berlangganan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-seedling"></i>
+                        <span>Muamalah Berkah</span>
+                    </div>
+                    <p>Marketplace syariah modern untuk umat muslim. 100% halal & berkah.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Perusahaan</h4>
+                    <a href="#">Tentang</a>
+                    <a href="#">Karier</a>
+                    <a href="#">Syarat & Ketentuan</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Produk</h4>
+                    <a href="#">Seller Center</a>
+                    <a href="#">API Partner</a>
+                    <a href="#">White Label</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Bantuan</h4>
+                    <a href="#">FAQ</a>
+                    <a href="#">Kontak</a>
+                    <a href="#">Panduan Seller</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="quote-islami">
+                    <i class="fas fa-quote-left"></i>
+                    <span>"Barangsiapa yang menjauhkan diri dari api neraka, surga dan sungai-sungai di dalamnya menjadi miliknya."</span>
+                    <small>QS. Ali Imran: 15</small>
+                </div>
+                <div class="footer-copyright">
+                    © 2024 Muamalah Berkah. Semua hak dilindungi. 100% Syariah Compliant.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Keranjang Belanja</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="cart-items">
+                <!-- Cart items will be populated by JS -->
+            </div>
+            <div class="cart-total">
+                <div>Total: <span id="cartTotal">Rp 0</span></div>
+                <button class="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick View Modal -->
+    <div class="modal" id="quickViewModal">
+        <div class="modal-content product-modal">
+            <!-- Product details will be populated by JS -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+                      </html>
